@@ -1,0 +1,51 @@
+---
+title: Notifications
+permalink: /notifications/
+layout: default
+---
+<script>
+  $(document).ready(function(){
+    var result1 = $.get("{{site.notificationurl}}", function(data)
+    {
+      var notifications = data.results;
+      var trTag = ""
+        $.each(notifications, function(index, val)
+        {
+          var td = ""
+          td += "<td>"+val.exam+"</td>"
+          td += "<td>"+val.qualification+"</td>"
+          td += "<td>"+val.vacancies+"</td>"
+          td += "<td>"+val.last_date+"</td>"
+          if (val.apply_now ){
+            td += "<td><a href="+val.apply_now+" target=_blank>Apply Now</a><br>"
+          } else {
+            td += "<td>"
+          }
+          if (val.details){
+            td += "<br><a href="+val.details+" target=_blank>Notification</a></td>"
+          } else {
+            td += "<br></td>"
+          }
+          trTag += "<tr>" + td + "</tr>" //appending entire columns to row
+        });
+        $("tbody").html(trTag);
+    });
+  });
+</script>
+<div id="notifications">
+  <h2>Bank Exam Notification 2016</h2>
+  <div class="table-class container">
+    <table class="table table-bordered">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Exam</th>
+          <th>Qualification</th>
+          <th>Vacancies</th>
+          <th>Last Date</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>

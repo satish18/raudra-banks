@@ -1,0 +1,12 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// This is required to make sure that bootstrap fonts are loaded
+$icon-font-path: "{{ site.baseurl }}/assets/fonts/bootstrap/";
+
+@import 'theme',
+        'mixins',
+        'common',
+        'home';

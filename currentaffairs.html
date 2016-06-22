@@ -1,0 +1,30 @@
+---
+title: Current Affairs
+permalink: /news/
+layout: default
+---
+<script>
+
+  $(document).ready(function(){
+    var result1 = $.get("{{site.newsurl}}", function(data)
+    {
+      var news = data.results;
+      var text = ""
+      $.each(news, function(index, val){
+        console.log(val.title);
+        text += "<div class='text'><h3>"+ val.title +"</h3>" + "<i class='fa fa-calendar'>&nbsp"+ val.created +"</i>"
+        text +=  "<p>"+val.description +"</p></div>"
+      });
+      $("div.data").html(text);
+    });
+  });
+</script>
+<div id="news-section">
+  <div class="container">
+    <h2>Banking Current Affairs</h2>
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+  </div>
+</div>
+</div>
