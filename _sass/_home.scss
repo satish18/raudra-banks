@@ -29,12 +29,14 @@
 #videos {
   width: 80vw;
   margin: 0 auto;
-  padding: 5vh 0 10vh;
-  margin-top: 15vh;
+  padding-top: 15vh;
+  // padding: 5vh 0 10vh;
+  // margin-top: 15vh;
 
   h2 {
     text-align: center;
     margin-bottom: 1em;
+    color: $dark-font-color;
   }
 
   .video-container {
@@ -118,8 +120,13 @@
 }
 #courses {
   text-align: center;
-  padding-top: 20vh;
+  padding-top: 15vh;
   color: #2f363f;
+  h2 {
+    text-align: center;
+    color: $dark-font-color;
+    padding-bottom: 1em;
+  }
   .program-content {
     display: block;
   }
@@ -188,8 +195,6 @@
     margin: auto;
     padding: 9px 11px;
     font-weight: 700;
-    left: 0;
-    right: 0;
     border-radius: 50px 50px 50px 60px;
     width: 80%;
     letter-spacing: 1.4px;
@@ -381,7 +386,7 @@
 }
 
 #notifications {
-  padding-top: 15vh;
+  padding-top: 20vh;
   min-height: 100vh;
   background-color: #F5F5F5;
   .table-class {
@@ -453,7 +458,7 @@
 }
 
 #current-news {
-  padding-top: 15vh;
+  padding-top: 20vh;
   background-color: #F5F5F5;
   h2 {
     color: $dark-font-color;
