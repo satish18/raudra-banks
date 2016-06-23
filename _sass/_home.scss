@@ -118,7 +118,7 @@
 }
 #courses {
   text-align: center;
-  padding: 5vh;
+  padding-top: 20vh;
   color: #2f363f;
   .program-content {
     display: block;
@@ -149,18 +149,6 @@
     text-align: center;
     font-style: normal;
     border: 1px solid transparent;
-    border-top-color: transparent;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-right-color: transparent;
-    border-right-style: solid;
-    border-bottom-color: transparent;
-    border-bottom-style: solid;    ;
-    border-left-color: transparent;
-    border-left-style: solid;
-    border-left-width: 1px;
     text-transform: uppercase;
     letter-spacing: 0px;
     font-weight: 600;
@@ -186,18 +174,11 @@
     color: #2f363f;
     background-color: rgb(249, 247, 232);
     border-bottom: 1px solid #DEDCCF;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(222, 220, 207);
   }
   tr.program-name td {
     color: #2f363f;
     font-size: 15px !important;
     padding: 20px 10px;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-left: 10px;
     font-weight: 600;
     line-height: 125%;
   }
@@ -315,21 +296,8 @@
     }
   }
 }
-// #exams {
-//   text-align: center;
-//   background-color:
-//   color: #2f363f;
-//   .img-class {
-//     padding-top: 50vh;
-//     img {
-//       width: 60%;
-//       height: 10%;
-//     }
-//   }
-// }
-
 #programs {
-  padding-top: 2vh;
+  padding-top: 20vh;
   text-align: center;
   .details {
     .register-btn {
@@ -339,18 +307,7 @@
       text-align: center;
       font-style: normal;
       border: 1px solid transparent;
-      border-top-color: transparent;
-      border-top-style: solid;
-      border-top-width: 1px;
-      border-right-width: 1px;
-      border-bottom-width: 1px;
-      // border-right-color: transparent;
-      // border-right-style: solid;
-      // border-bottom-color: transparent;
-      // border-bottom-style: solid;    ;
-      // border-left-color: transparent;
-      // border-left-style: solid;
-      // border-left-width: 1px;
+      border-left: 1px solid transparent;
       text-transform: uppercase;
       letter-spacing: 0px;
       font-weight: 600;

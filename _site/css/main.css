@@ -145,7 +145,7 @@ footer {
 
 #courses {
   text-align: center;
-  padding: 5vh;
+  padding-top: 20vh;
   color: #2f363f; }
   #courses .program-content {
     display: block; }
@@ -170,18 +170,6 @@ footer {
     text-align: center;
     font-style: normal;
     border: 1px solid transparent;
-    border-top-color: transparent;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-right-color: transparent;
-    border-right-style: solid;
-    border-bottom-color: transparent;
-    border-bottom-style: solid;
-    border-left-color: transparent;
-    border-left-style: solid;
-    border-left-width: 1px;
     text-transform: uppercase;
     letter-spacing: 0px;
     font-weight: 600;
@@ -203,18 +191,11 @@ footer {
     background: #F9F7E8;
     color: #2f363f;
     background-color: #f9f7e8;
-    border-bottom: 1px solid #DEDCCF;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #dedccf; }
+    border-bottom: 1px solid #DEDCCF; }
   #courses tr.program-name td {
     color: #2f363f;
     font-size: 15px !important;
     padding: 20px 10px;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-left: 10px;
     font-weight: 600;
     line-height: 125%; }
   #courses .pacakge {
@@ -314,7 +295,7 @@ footer {
     padding-top: 1em; }
 
 #programs {
-  padding-top: 2vh;
+  padding-top: 20vh;
   text-align: center; }
   #programs .details {
     /* Zebra striping */ }
@@ -325,11 +306,7 @@ footer {
       text-align: center;
       font-style: normal;
       border: 1px solid transparent;
-      border-top-color: transparent;
-      border-top-style: solid;
-      border-top-width: 1px;
-      border-right-width: 1px;
-      border-bottom-width: 1px;
+      border-left: 1px solid transparent;
       text-transform: uppercase;
       letter-spacing: 0px;
       font-weight: 600;
