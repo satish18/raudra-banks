@@ -313,6 +313,81 @@ footer {
     color: #2f363f;
     padding-top: 1em; }
 
+#programs {
+  padding-top: 2vh;
+  text-align: center; }
+  #programs .details {
+    /* Zebra striping */ }
+    #programs .details .register-btn {
+      color: #fff;
+      background-color: #39b54a;
+      font-size: 12px;
+      text-align: center;
+      font-style: normal;
+      border: 1px solid transparent;
+      border-top-color: transparent;
+      border-top-style: solid;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      font-weight: 600;
+      border-radius: 3px;
+      padding: 8px 32px;
+      display: inline-block; }
+    #programs .details table {
+      width: 100%;
+      border-collapse: collapse; }
+    #programs .details tr:nth-of-type(odd) {
+      background: #eee; }
+    #programs .details th {
+      background: #333;
+      color: white;
+      font-weight: bold; }
+    #programs .details td, #programs .details th {
+      padding: 6px;
+      border: 1px solid #ccc;
+      text-align: left; }
+    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+      #programs .details {
+        /* Hide table headers (but not display: none;, for accessibility) */ }
+        #programs .details table, #programs .details thead, #programs .details tbody, #programs .details th, #programs .details td, #programs .details tr {
+          display: block; }
+        #programs .details thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px; }
+        #programs .details tr {
+          border: 1px solid #ccc; }
+        #programs .details td {
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #eee;
+          position: relative;
+          padding-left: 50%; }
+        #programs .details td:before {
+          /* Now like a table header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap; }
+        #programs .details td:nth-of-type(1):before {
+          content: "Package"; }
+        #programs .details td:nth-of-type(2):before {
+          content: "Exams Covered"; }
+        #programs .details td:nth-of-type(3):before {
+          content: "Fee"; }
+        #programs .details td:nth-of-type(4):before {
+          content: "Duration"; } }
+  #programs h2 {
+    color: #555555;
+    text-align: center;
+    padding-bottom: 1em; }
+
 #notifications {
   padding-top: 15vh;
   min-height: 100vh;
@@ -334,10 +409,7 @@ footer {
       text-align: left; }
     @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
       #notifications .table-class {
-        /* Hide table headers (but not display: none;, for accessibility) */
-        /*
-        Label the data
-        */ }
+        /* Hide table headers (but not display: none;, for accessibility) */ }
         #notifications .table-class table, #notifications .table-class thead, #notifications .table-class tbody, #notifications .table-class th, #notifications .table-class td, #notifications .table-class tr {
           display: block; }
         #notifications .table-class thead tr {

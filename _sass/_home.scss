@@ -328,6 +328,101 @@
 //   }
 // }
 
+#programs {
+  padding-top: 2vh;
+  text-align: center;
+  .details {
+    .register-btn {
+      color: #fff;
+      background-color: #39b54a;
+      font-size: 12px;
+      text-align: center;
+      font-style: normal;
+      border: 1px solid transparent;
+      border-top-color: transparent;
+      border-top-style: solid;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      // border-right-color: transparent;
+      // border-right-style: solid;
+      // border-bottom-color: transparent;
+      // border-bottom-style: solid;    ;
+      // border-left-color: transparent;
+      // border-left-style: solid;
+      // border-left-width: 1px;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      font-weight: 600;
+      border-radius: 3px;
+      padding: 8px 32px;
+      display: inline-block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    /* Zebra striping */
+    tr:nth-of-type(odd) {
+      background: #eee;
+    }
+    th {
+      background: #333;
+      color: white;
+      font-weight: bold;
+    }
+    td, th {
+      padding: 6px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
+    {
+
+    	table, thead, tbody, th, td, tr {
+    		display: block;
+    	}
+
+    	/* Hide table headers (but not display: none;, for accessibility) */
+    	thead tr {
+    		position: absolute;
+    		top: -9999px;
+    		left: -9999px;
+    	}
+
+    	tr { border: 1px solid #ccc; }
+
+    	td {
+    		/* Behave  like a "row" */
+    		border: none;
+    		border-bottom: 1px solid #eee;
+    		position: relative;
+    		padding-left: 50%;
+    	}
+
+    	td:before {
+    		/* Now like a table header */
+    		position: absolute;
+    		/* Top/left values mimic padding */
+    		top: 6px;
+    		left: 6px;
+    		width: 45%;
+    		padding-right: 10px;
+    		white-space: nowrap;
+    	}
+    	td:nth-of-type(1):before { content: "Package"; }
+    	td:nth-of-type(2):before { content: "Exams Covered"; }
+    	td:nth-of-type(3):before { content: "Fee"; }
+    	td:nth-of-type(4):before { content: "Duration"; }
+    }
+  }
+  h2 {
+    color: $dark-font-color;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+}
+
 #notifications {
   padding-top: 15vh;
   min-height: 100vh;
@@ -385,10 +480,6 @@
     		padding-right: 10px;
     		white-space: nowrap;
     	}
-
-    	/*
-    	Label the data
-    	*/
     	td:nth-of-type(1):before { content: "Exam"; }
     	td:nth-of-type(2):before { content: "Qualification"; }
     	td:nth-of-type(3):before { content: "Vacancies"; }
