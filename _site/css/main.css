@@ -159,7 +159,7 @@ footer {
 
 #courses {
   text-align: center;
-  padding-top: 15vh; }
+  padding-top: 4vh; }
   #courses h2 {
     text-align: center;
     color: #315562;
@@ -310,7 +310,7 @@ footer {
     padding-top: 1em; }
 
 #programs {
-  padding-top: 20vh;
+  padding-top: 5vh;
   text-align: center; }
   #programs .details {
     /* Zebra striping */ }
